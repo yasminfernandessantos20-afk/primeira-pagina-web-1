@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: rgb( 30, 30, 45); /* Um fundo escuro e elegante */
+    color: white;
+
+    /* Usando Flexbox no body para organizar tudo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    padding: 40px 20px;
+    gap: 40px; /* Espaço entre o título,o menu e o vídeo */
+}
+h1 {
+    font-size: 2.5rem;
+    color: rgb(100, 200, 255); /* azul claro para destacar */
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(79, 71, 201);
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+li a:hover {
+    background-color: rgb(100, 200, 255);
+    color: rgb(30, 30, 45);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(100, 200, 255, 0.4);
+}
+iframe {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    border: 3px solid rgb(79, 71, 201);
+    max-width: 100%;
+}
